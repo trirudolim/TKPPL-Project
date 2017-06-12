@@ -5,9 +5,10 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     title Hello World
 
-    link(rel='stylesheet', type='text/css', href='styles/main.styl')
+    link(rel='stylesheet', type='text/css', href='build/build.css')
 
   body
+
     article
 
       section
@@ -45,7 +46,7 @@ html
               bullets('li, .bullet')
             ]);
 
-      section(data-bespoke-hash='named-route')
+      section(data-bespoke-hash='name route')
         h2 Named Route
         h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
         p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
