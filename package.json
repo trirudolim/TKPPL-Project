@@ -1,5 +1,5 @@
 {
-  "name": "presentation-hello-world",
+  "name": "presentation-classic-games",
   "version": "0.0.0",
   "dependencies": {},
   "devDependencies": {
@@ -35,5 +35,20 @@
   },
   "engines": {
     "node": ">=0.10.0"
-  }
+  },
+  "description": "> A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trirudolim/TKPPL-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trirudolim/TKPPL-Project/issues"
+  },
+  "homepage": "https://github.com/trirudolim/TKPPL-Project#readme"
 }
