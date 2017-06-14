@@ -1,5 +1,5 @@
 ================================================================================================
-										INFORMASI UMUM
+					INFORMASI UMUM
 ================================================================================================
 
 Judul Topik : Classic Games
@@ -19,7 +19,7 @@ Anggota 3 :
 	NIM  : 15.111.1330
 
 ==================================================================================================
-										SPRINT SCHEDULE
+					SPRINT SCHEDULE
 ==================================================================================================
 
 Sprint 1 :
@@ -35,7 +35,7 @@ Sprint 3 :
 Scrummaster : Muhammad Adryan Purba - 15.111.0989
 
 ==================================================================================================
-										DAILY PROGRESS
+					DAILY PROGRESS
 ==================================================================================================
 
 04/6
@@ -44,15 +44,16 @@ Daily Scrum
 
 Tri Rudo Halim :
 1. Hari pertama
-2. Hari ini saya menentukan scrummaster, menentukan design presentasi, mendiskusikan topik dan isi topik dan membagi tugas backlog.
+2. Hari ini saya menentukan scrummaster, menentukan design presentasi, mendiskusikan topik dan isi topik dan membagi tugas backlog
 
 Muhammad Adryan Purba :
 1. Hari pertama
-2. Hari ini saya berdiskusi topik dan isi topik.
+2. Hari ini saya berdiskusi topik dan isi topik
 
 Steven Prayoego :
 1. Hari pertama
-2. Hari ini saya berdiskusi topik dan isi topik.
+2. Hari ini saya berdiskusi topik dan isi topik
+
 05/6
 Daily Scrum
 ------------
