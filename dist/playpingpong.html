@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Pong</title>
+	<title>Pong Game</title>
 
 	<!-- Basic styling, centering the canvas -->
 	<style>
@@ -15,13 +15,116 @@
 		left: 0;
 		right: 0;
 	}
+	svg:hover {
+		opacity: 1;
+		line: blue;
+	}
+
+	body {
+        background: #222;
+    }
+    h2{
+    	margin-top: 20px;
+        color: white;
+        font-size: 65px;
+    }
+    h4{
+    	color: white;
+    }
+    .right{
+        float: right;
+        margin-right: 25px;
+    }
+    .left{
+        float: left;
+        margin-left: 25px;
+    }
 	</style>
 </head>
 <body>
-<section>
+	<section>
 	<script>
-	var
+	/**
+	 * Scoreboard stuff
+	 *  _   0
+	 * |_| 123 <= coresponding indexes, ie. for 1 is 
+	 * |_| 456    bar 3 and 6 visible => 0 001 001
+	 * 
+	 */
+	var NUMS = [
+		"1 101 111",
+		"0 001 001",
+		"1 011 110",
+		"1 011 011",
+		"0 111 001",
+		"1 110 011",
+		"1 110 111",
+		"1 001 001",
+		"1 111 111",
+		"1 111 011"
+	],
+	POINTS = [
+		[0, 0, 1, 0],
+		[0, 0, 0, 1],
+		[0, 1, 1, 1],
+		[1, 0, 1, 1],
+		[0, 1, 0, 2],
+		[0, 2, 1, 2],
+		[1, 1, 1, 2]
+	];
+	// Convert the strings in NUMS to a boolean array
+	for (var i = 0; i < NUMS.length; i++) {
+		var n = NUMS[i].replace(/\s+/g, "");
+		NUMS[i] = (function() {
+			var l = [];
+			for (var j = 0; j < n.length; j++) {
+				l.push(n[j] === "1");
+			}
+			return l;
+		})();
+	}
+	function pad(str, padding, width) {
+		return (new Array(width||2).join(padding||0)+str).slice(-width)
+	}
+	function drawNumber(n, x, y, ralign) {
+		n = n.toString(); // convert to string => possible to loop thru all digits
 
+		var size = 32,
+			padding = 16;
+		
+		ctx.save();
+		ctx.strokeStyle = "#fff";
+		ctx.lineCap = "square";
+		ctx.lineWidth = padding/2;
+
+		if (ralign) { // if right aligned move x coord accordingly
+			x -= (n.length*(padding+size)-padding);
+		}
+		ctx.translate(x, y);
+
+		for (var i = 0; i < n.length; i++) {
+			var num = NUMS[parseInt(n[i])];
+			
+			ctx.beginPath();
+			for (var j = 0; j < num.length; j++) {
+				if (num[j]) {
+					var p = POINTS[j];
+					ctx.moveTo(p[0]*size, p[1]*size);
+					ctx.lineTo(p[2]*size, p[3]*size);
+				}
+			}
+			ctx.closePath();
+			ctx.stroke();
+			// fix anoying bug
+			var p2 = padding/2,
+				p4 = padding/4;
+			ctx.fillRect(size - p4, 2*size - p4, p2, p2);
+
+			ctx.translate(size+padding, 0);
+		}
+		ctx.restore();
+	}
+	var
 	/**
 	 * Constants
 	 */
@@ -48,6 +151,7 @@
 	player = {
 		x: null,
 		y: null,
+		score: null,
 
 		width:  20,
 		height: 100,
@@ -78,6 +182,7 @@
 	ai = {
 		x: null,
 		y: null,
+		score: null,
 
 		width:  20,
 		height: 100,
@@ -177,7 +282,11 @@
 			// reset the ball when ball outside of the canvas in the
 			// x direction
 			if (0 > this.x+this.side || this.x > WIDTH) {
-				this.serve(pdle===player ? 1 : -1);
+				var isplayer = pdle === player;
+				
+				this.serve(isplayer ? 1 : -1);
+				player.score += isplayer ? 0 : 1;
+				ai.score += isplayer ? 1 : 0;
 			}
 		},
 
@@ -188,6 +297,24 @@
 			ctx.fillRect(this.x, this.y, this.side, this.side);
 		}
 	};
+
+	function requestFullscreen() {
+		console.log(canvas);
+		if (canvas.requestFullscreen) {
+			canvas.requestFullscreen();
+		} else if (canvas.msRequestFullscreen) {
+			canvas.msRequestFullscreen();
+		} else if (canvas.mozRequestFullScreen) {
+			canvas.mozRequestFullScreen();
+		} else if (canvas.webkitRequestFullscreen) {
+			canvas.webkitRequestFullscreen();
+		}
+		window.onresize = function() {
+			canvas.width = WIDTH = window.innerWidth;
+			canvas.height = HEIGHT = window.innerHeight;
+			init();
+		}
+	}
 
 	/**
 	 * Starts the game
@@ -211,6 +338,19 @@
 
 		init(); // initiate game objects
 
+		function touchevt(evt) {
+			var el = evt.target,
+				oy = 0;
+
+			do {
+				oy += el.offsetTop;
+			} while (el = el.parentOffset)
+
+			player.y = evt.touches[0].clientY - oy - player.height/2;	
+		}
+		canvas.addEventListener("touchmove", touchevt);
+		canvas.addEventListener("touchstart", touchevt);
+
 		// game loop function
 		var loop = function() {
 			update();
@@ -227,9 +367,11 @@
 	function init() {
 		player.x = player.width;
 		player.y = (HEIGHT - player.height)/2;
+		player.score = 0;
 
 		ai.x = WIDTH - (player.width + ai.width);
 		ai.y = (HEIGHT - ai.height)/2;
+		ai.score = 0;
 
 		ball.serve(1);
 	}
@@ -253,6 +395,7 @@
 
 		ctx.fillStyle = "#fff";
 
+
 		ball.draw();
 		player.draw();
 		ai.draw();
@@ -267,12 +410,21 @@
 			y += step;
 		}
 
+		// draw the scores
+		var w2 = WIDTH/2;
+		drawNumber(pad(player.score), w2-20, 20, true);
+		drawNumber(pad(ai.score), w2+20, 20);
+
 		ctx.restore();
 	}
 
 	// start and run the game
 	main();
 	</script>
+	<h2>PONG</h2>
+	<h4 class="left"><a href="index.html#list"><-List</a></h4>
+    <h4 class="right"><a href="index.html">Next-></a></h4>
+    <script src="build/build.js"></script>
 	</section>
 </body>
 </html>
