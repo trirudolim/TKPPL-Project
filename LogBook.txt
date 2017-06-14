@@ -1,0 +1,109 @@
+================================================================================================
+										INFORMASI UMUM
+================================================================================================
+
+Judul Topik : Classic Games
+Alamat Github : https://github.com/trirudolim/TKPPL-Project.git
+Alamat Trello : https://trello.com/b/6BI67OB1/tkppl-project
+
+Anggota 1 :
+	Nama : Tri Rudo Halim
+	NIM  : 15.111.0016
+
+Anggota 2 :
+	Nama : Muhammad Adryan Purba
+	NIM  : 15.111.0989
+
+Anggota 3 :
+	Nama : Steven Prayoego
+	NIM  : 15.111.1330
+
+==================================================================================================
+										SPRINT SCHEDULE
+==================================================================================================
+
+Sprint 1 :
+04/6 - 07/6
+Scrummaster : Steven Prayoego - 15.111.1330
+
+Sprint 2 :
+08/6 - 11/6
+Scrummaster : Tri Rudo Halim - 15.111.0016
+
+Sprint 3 :
+12/6 - 15/6
+Scrummaster : Muhammad Adryan Purba - 15.111.0989
+
+==================================================================================================
+										DAILY PROGRESS
+==================================================================================================
+
+04/6
+Daily Scrum
+------------
+
+Tri Rudo Halim :
+1. Hari pertama
+2. Hari ini saya menentukan scrummaster, menentukan design presentasi, mendiskusikan topik dan isi topik dan membagi tugas backlog.
+
+Muhammad Adryan Purba :
+1. Hari pertama
+2. Hari ini saya berdiskusi topik dan isi topik.
+
+Steven Prayoego :
+1. Hari pertama
+2. Hari ini saya berdiskusi topik dan isi topik.
+05/6
+Daily Scrum
+------------
+
+Tri Rudo Halim :
+1. Hari ini saya menginstall tools untuk tugas yakni : node.js, paket bespoke.js dan git
+2. Saya membuat akun trello dan github 
+3. Ada kendala saat melakukan instalasi tools
+
+Muhammad Adryan Purba :
+1. Hari ini saya tidak melakukan progress
+
+Steven Prayoego :
+1. Hari ini saya tidak melakukan progress
+
+06/6
+Daily Scrum
+------------
+
+Tri Rudo Halim :
+1. Hari ini saya tidak melakukan progress
+
+Muhammad Adryan Purba :
+1. Hari ini saya membuat akun trello dan github
+
+Steven Prayoego :
+1. Hari ini saya membuat akun trello dan github
+
+07/6
+Daily Scrum
+------------
+
+Tri Rudo Halim :
+1. Hari ini saya mencoba-coba membuat repository remote dengan git bash dan mempelajari command-command git
+2. Saya mencoba-coba membuat board, card dan list di trello
+3. Kendala saat run ketika melakukan gulp serve
+
+Muhammad Adryan Purba :
+1. Hari ini saya tidak melakukan progress
+
+Steven Prayoego :
+1. Hari ini saya tidak melakukan progress
+
+
+08/6
+Daily Scrum
+-----------
+Tri Rudo Halim :
+
+
+Muhammad Adryan Purba :
+
+
+Steven Prayoego :
