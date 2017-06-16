@@ -1,5 +1,5 @@
 ================================================================================================
-					INFORMASI UMUM
+										INFORMASI UMUM
 ================================================================================================
 
 Judul Topik : Classic Games
@@ -19,7 +19,7 @@ Anggota 3 :
 	NIM  : 15.111.1330
 
 ==================================================================================================
-					SPRINT SCHEDULE
+										SPRINT SCHEDULE
 ==================================================================================================
 
 Sprint 1 :
@@ -35,46 +35,40 @@ Sprint 3 :
 Scrummaster : Muhammad Adryan Purba - 15.111.0989
 
 ==================================================================================================
-					DAILY PROGRESS
+										DAILY PROGRESS
 ==================================================================================================
 
 04/6
 Daily Scrum
 ------------
-
 Tri Rudo Halim :
-1. Hari pertama
-2. Hari ini saya menentukan scrummaster, menentukan design presentasi, mendiskusikan topik dan isi topik dan membagi tugas backlog
+1. Hari ini saya menentukan scrummaster, menentukan design presentasi, mendiskusikan topik dan isi topik dan membagi tugas backlog
 
 Muhammad Adryan Purba :
-1. Hari pertama
-2. Hari ini saya berdiskusi topik dan isi topik
+1. Hari ini saya berdiskusi topik dan isi topik
 
 Steven Prayoego :
-1. Hari pertama
-2. Hari ini saya berdiskusi topik dan isi topik
+1. Hari ini saya berdiskusi topik dan isi topik
 
 05/6
 Daily Scrum
 ------------
-
 Tri Rudo Halim :
 1. Hari ini saya menginstall tools untuk tugas yakni : node.js, paket bespoke.js dan git
 2. Saya membuat akun trello dan github 
 3. Ada kendala saat melakukan instalasi tools
 
 Muhammad Adryan Purba :
-1. Hari ini saya tidak melakukan progress
+1. Hari ini saya tidak melanjutkan progress
 
 Steven Prayoego :
-1. Hari ini saya tidak melakukan progress
+1. Hari ini saya tidak melanjutkan progress
 
 06/6
 Daily Scrum
 ------------
-
 Tri Rudo Halim :
-1. Hari ini saya tidak melakukan progress
+1. Hari ini saya tidak melanjutkan progress
 
 Muhammad Adryan Purba :
 1. Hari ini saya membuat akun trello dan github
@@ -85,26 +79,138 @@ Steven Prayoego :
 07/6
 Daily Scrum
 ------------
-
 Tri Rudo Halim :
 1. Hari ini saya mencoba-coba membuat repository remote dengan git bash dan mempelajari command-command git
 2. Saya mencoba-coba membuat board, card dan list di trello
 3. Kendala saat run ketika melakukan gulp serve
 
 Muhammad Adryan Purba :
-1. Hari ini saya tidak melakukan progress
+1. Hari ini saya tidak melanjutkan progress
 
 Steven Prayoego :
-1. Hari ini saya tidak melakukan progress
+1. Hari ini saya tidak melanjutkan progress
 
 
 08/6
 Daily Scrum
 -----------
 Tri Rudo Halim :
-
+1. Hari ini saya tidak melanjutkan progress
 
 Muhammad Adryan Purba :
-
+1. Hari ini saya tidak melanjutkan progress
 
 Steven Prayoego :
+1. Hari ini saya tidak melanjutkan progress
+
+09/6
+Daily Scrum
+-----------
+Tri Rudo Halim :
+1. Hari ini saya mencari materi dan penjelasan untuk topik classic-games
+2. Saya membuat slide pada file jade
+3. Kendala pada saat run dari file jade
+
+Muhammad Adryan Purba :
+1. Hari ini saya melakukan clone repository remote yang telah dibuat
+2. Saya mencoba commit untuk pertama kalinya.
+3. Kendala saat melakukan push.
+
+Steven Prayoego :
+1. Hari ini saya melakukan clone repository remote yang telah dibuat
+2. Saya mencoba commit untuk pertama kalinya.
+
+10/6
+Daily Scrum
+-----------
+Tri Rudo Halim :
+1. Hari ini saya menentukan sub-topik.
+2. Saya tidak lagi mengedit slide dari jade tetapi melalui html
+3. Tidak ada kendala
+
+Muhammad Adryan Purba :
+1. Hari ini saya mencoba kembali melakukan push ke repository remote
+
+Steven Prayoego :
+1. Hari ini saya mencoba kembali melakukan push ke repository remote
+
+11/6
+Daily Scrum
+-----------
+Tri Rudo Halim :
+1. Hari ini saya membuat slide dan menambahkan beberapa layout pada html dan css
+2. Saya menambahkan beberapa sub-topik pada slide
+3. Memodifikasi theme dengan bespoke-theme-nebula.js
+
+Muhammad Adryan Purba :
+1. Hari ini saya mencari source code dari game snake (slide sub-topik 1)
+2. Saya memodifikasi source code pada javascript
+
+Steven Prayoego :
+1. Hari ini saya mencari materi dan penjelasan untuk game pong (slide sub-topik 2)
+2. Masalah pada saat push ke repository remote
+
+12/6
+Daily Scrum
+-----------
+Tri Rudo Halim :
+1. Hari ini saya mencari source code dari game tic tac toe (slide sub-topik 3)
+2. Saya menambahkan beberapa code javascript game tic tac toe
+
+Muhammad Adryan Purba :
+1. Hari ini saya mengedit dan manambah code pada game snake (slide sub-topik 1)
+2. Saya mencari source code dari game space invaders (slide sub-topik 3)
+3. Saya membuat layout pada game snake
+
+Steven Prayoego :
+1. Hari ini saya menambahkan materi untuk game pong (slide sub-topik 2)
+2. Saya mencari materi dan penjelasan untuk game tic tac toe (slide sub-topik3 )
+
+13/6
+Daily Scrum
+-----------
+Tri Rudo Halim :
+1. Hari ini saya menambahkan code javascript untuk fitur "play again" pada game tic tac toe (slide sub-topik 3)
+2. Saya membuat styling pada game tic tac toe
+
+Muhammad Adryan Purba :
+1. Hari ini saya menambahkan beberapa code javascript game space invaders (slide sub-topik 4)
+2. Saya membuat contoh tampilan pada game space invaders
+
+Steven Prayoego :
+1. Hari ini saya telah menyelesaikan game snake(slide sub-topik 1) dan mendebug gamenya
+2. Saya mencari tambahan materi dan penjelasan untuk game tic tac toe (slide sub-topik3 )
+
+14/6
+Daily Scrum
+-----------
+Tri Rudo Halim :
+1. Hari ini saya mengubah background di styling pada game snake (slide sub-topik 1)
+2. Saya melakukan push pada folder dist
+
+Muhammad Adryan Purba :
+1. Hari ini saya telah menyelesaikan game pong (slide sub-topik 2) dan mendebug gamenya
+2. Saya menambahkan fitur "score" pada game pong
+
+Steven Prayoego :
+1. Hari ini saya telah menambahkan materi untuk game space invaders (slide sub-topik 2)
+2. Saya membuat logbook 
+3. Hari ini saya telah menyelesaikan game tic tac toe (slide sub-topik 3) dan mendebug gamenya
+
+15/6
+Daily Scrum
+-----------
+Tri Rudo Halim :
+1. Hari ini saya telah menyelesaikan game space invaders (slide sub-topik 4) dan mendebug gamenya
+2. Saya menambahkan fitur "back to list" dan "next" untuk slide ketika berada di game
+3. Melakukan testing dan run pada semua file html dan memperbaiki beberapa slide
+
+Muhammad Adryan Purba :
+1. Hari ini saya menambahkan materi pada game space invaders (slide sub-topik 4)
+2. Saya mengupdate logbook dan membuat burntdown chart
+3. Melakukan testing dan run pada semua file html dan mengecek semua file
+
+Steven Prayoego :
+1. Hari ini saya melakukan debug untuk semua game yang telah diselesaikan
+2. Saya mengupdate logbook
+3. Melakukan testing dan run pada semua file html dan mengecek semua file 
